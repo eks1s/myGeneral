@@ -18,8 +18,10 @@
 
   .skillsCard {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     width: 187px;
     height: 200px;
     -webkit-box-shadow: -7px 0px 19px 0px rgba(30, 30, 30, 0.3);
@@ -27,6 +29,7 @@
     box-shadow: -7px 0px 19px 0px rgba(30, 30, 30, 0.3);
     flex-grow: 0;
     margin-left: -40px;
+    transition: all 0.5s ease-in-out;
 
     @media all and (max-width: $laptop-size) {
       width: 148px;
@@ -44,7 +47,18 @@
     &.hover {
       &:hover {
         z-index: 5;
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
       }
+    }
+
+    .name {
+      color: var(--black-color);
+    }
+
+    .logo {
+      width: 120px;
     }
   }
 }
