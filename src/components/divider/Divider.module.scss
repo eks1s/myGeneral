@@ -1,0 +1,15 @@
+@import "../../styles/var.scss";
+
+.divider {
+  display: block;
+  height: 30px;
+  @media all and (max-width: $laptop-size) {
+    height: 25px;
+  }
+  @media all and (max-width: $tablet-size) {
+    height: 20px;
+  }
+  @media all and (max-width: $mobile-size) {
+    height: 15px;
+  }
+}

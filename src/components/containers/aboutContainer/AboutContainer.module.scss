@@ -1,0 +1,41 @@
+@import "../../../styles/var.scss";
+
+.infoContainer {
+  background-color: var(--green-color);
+  display: flex;
+
+  @media all and (max-width: $mobile-size) {
+    flex-direction: column;
+  }
+
+  .portrait {
+    border-radius: 20px;
+    height: 300px;
+
+    @media all and (max-width: $mobile-size) {
+      width: 310px;
+    }
+  }
+
+  .infoContainer__about_wrapper {
+    margin-left: 20px;
+
+    @media all and (max-width: $mobile-size) {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+
+    .infoContainer__about_wrapper__titles {
+      @media all and (max-width: $tablet-size) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}

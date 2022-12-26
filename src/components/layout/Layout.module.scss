@@ -1,0 +1,23 @@
+@import "../../styles/var.scss";
+
+.outlet {
+  width: 1500px;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-sizing: border-box;
+
+  @media all and (max-width: $laptop-size) {
+    width: 1130px;
+    padding: 0 40px;
+  }
+
+  @media all and (max-width: $tablet-size) {
+    width: 740px;
+    padding: 0 20px;
+  }
+
+  @media all and (max-width: $mobile-size) {
+    width: 370px;
+    padding: 0 10px;
+  }
+}

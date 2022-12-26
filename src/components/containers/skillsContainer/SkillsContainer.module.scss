@@ -1,0 +1,50 @@
+@import "../../../styles/var.scss";
+
+.skillsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 0px 2px;
+  isolation: isolate;
+  padding: 20px;
+  padding-left: 60px;
+  box-sizing: border-box;
+
+  @media all and (max-width: $tablet-size) {
+    flex-wrap: wrap;
+    gap: 22px;
+    padding-left: 20px;
+  }
+
+  .skillsCard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 187px;
+    height: 200px;
+    -webkit-box-shadow: -7px 0px 19px 0px rgba(30, 30, 30, 0.3);
+    -moz-box-shadow: -7px 0px 19px 0px rgba(30, 30, 30, 0.3);
+    box-shadow: -7px 0px 19px 0px rgba(30, 30, 30, 0.3);
+    flex-grow: 0;
+    margin-left: -40px;
+
+    @media all and (max-width: $laptop-size) {
+      width: 148px;
+    }
+
+    @media all and (max-width: $tablet-size) {
+      margin-left: 0;
+      box-shadow: none;
+    }
+
+    @media all and (max-width: $mobile-size) {
+      width: 144px;
+    }
+
+    &.hover {
+      &:hover {
+        z-index: 5;
+      }
+    }
+  }
+}

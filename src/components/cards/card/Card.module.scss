@@ -1,0 +1,23 @@
+@import "../../../styles/var.scss";
+
+.card {
+  display: flex;
+  flex-shrink: 0;
+  width: 300px;
+  padding: 20px;
+  background-color: var(--light1-gray-color);
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  &.link {
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--green-color);
+    }
+  }
+
+  @media all and (max-width: $mobile-size) {
+    width: 100%;
+  }
+}
