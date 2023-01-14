@@ -1,8 +1,8 @@
 import React from "react";
 import CheckboxSelekt from "../../components/checkboxSelekt/checkboxSelekt";
 
-function checkboxSelect() {
+function CheckboxSelect() {
     return <CheckboxSelekt />;
 }
 
-export default checkboxSelect;
+export default CheckboxSelect;
